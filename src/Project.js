@@ -24,17 +24,19 @@ class Project extends Component{
      render() {
          let result = this.state.info.map(i => {
             return (
-              <div>  
+            <div style={{fontSize:40,color:"blue",textAlign: "center"}}>  
                   <p key={i.email}>{i.email}</p>
-                  <img src={i.picture.large} alt="pic" />
+                  <img src={i.picture.large} alt="this is me" />
               </div>
             )
         });
         
         return (
             <div>
-                <h2>twitter data</h2>
+                <h2 style={{color:"blue",fontSize: 50,border:"2px solid blue",backgroundColor:"yellow"}}>twitter data</h2>
+                
                 {result}
+                
                 
             </div>
         )
